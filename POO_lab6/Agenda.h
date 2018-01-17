@@ -1,6 +1,7 @@
 //Problema 5 - Laboratorul 6
 
 #pragma once
+using namespace std;
 
 class Activitate
 {
@@ -10,21 +11,13 @@ private:
 	{
 		friend class Activitate;
 	private:
-		char *value;
-	public:
-		Adresa(char[]);
-		Adresa(Adresa &);
-		~Adresa();
+		static char *value;
 	};
 	class Data
 	{
 		friend class Activitate;
 	private:
-		char *value;
-	public:
-		Data(char[]);
-		Data(Data &);
-		~Data();
+		static char *value;
 	};
 
 public:

@@ -1,22 +1,21 @@
 ﻿  Activitate.cpp
 Activitate.cpp(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-Activitate.cpp(9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
 Activitate.cpp(15): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
-Activitate.cpp(26): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Activitate.cpp(16): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
-Activitate.cpp(32): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Activitate.cpp(17): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
-Activitate.cpp(43): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Activitate.cpp(36): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
-Activitate.cpp(50): error C2326: 'char *Activitate::Get_Adresa(void)': function cannot access 'Activitate::Adresa::value'
-Activitate.cpp(50): error C2039: 'Adresa': is not a member of 'Activitate'
-  c:\users\ioan\documents\visual studio 2015\projects\poo_lab6\poo_lab6\Agenda.h(6): note: see declaration of 'Activitate'
-Activitate.cpp(55): error C2326: 'char *Activitate::Get_Data(void)': function cannot access 'Activitate::Data::value'
-Activitate.cpp(55): error C2039: 'Data': is not a member of 'Activitate'
-  c:\users\ioan\documents\visual studio 2015\projects\poo_lab6\poo_lab6\Agenda.h(6): note: see declaration of 'Activitate'
-Activitate.cpp(61): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Activitate.cpp(37): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+Activitate.cpp(38): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
   Main.cpp
 Main.cpp(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating code
+  All 7 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  POO_lab6.vcxproj -> C:\Users\Ioan\documents\visual studio 2015\Projects\POO_lab6\Release\POO_lab6.exe
+  POO_lab6.vcxproj -> C:\Users\Ioan\documents\visual studio 2015\Projects\POO_lab6\Release\POO_lab6.pdb (Full PDB)

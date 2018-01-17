@@ -3,46 +3,18 @@
 #include"Agenda.h";
 #include<string.h>
 
-Activitate::Adresa::Adresa(char adresa[])
-{
-	value = new char[strlen(adresa) + 1];
-	strcpy(value, adresa);
-}
-
-Activitate::Adresa::Adresa(Adresa &adresa)
-{
-	value = new char[strlen(adresa.value) + 1];
-	strcpy(value, adresa.value);
-}
-
-Activitate::Adresa::~Adresa()
-{
-	delete value;
-}
-
-Activitate::Data::Data(char data[])
-{
-	value = new char[strlen(data) + 1];
-	strcpy(value, data);
-}
-
-Activitate::Data::Data(Data &data)
-{
-	value = new char[strlen(data.value) + 1];
-	strcpy(value, data.value);
-}
-
-Activitate::Data::~Data()
-{
-	delete value;
-}
+char* Activitate::Adresa::value = NULL;
+char* Activitate::Data::value = NULL;
 
 Activitate::Activitate(char valueofnume[], char valueofadresa[], char valueofdata[]) 
 {
 	nume = new char[strlen(valueofnume) + 1];
+	Adresa::value = new char[strlen(valueofadresa) + 1];
+	Data::value = new char[strlen(valueofdata) + 1];
+
 	strcpy(nume, valueofnume);
-	Activitate::Adresa::Adresa(valueofadresa);
-	Activitate::Data::Data(valueofdata);
+	strcpy(Adresa::value, valueofadresa);
+	strcpy(Data::value, valueofdata);
 }
 
 char* Activitate::Get_Adresa()
@@ -58,12 +30,17 @@ char* Activitate::Get_Data()
 Activitate::Activitate(Activitate &activitate)
 {
 	nume = new char[strlen(activitate.nume) + 1];
+	Adresa::value = new char[strlen(activitate.Get_Adresa()) + 1];
+	Data::value = new char[strlen(activitate.Get_Data()) + 1];
+
 	strcpy(nume, activitate.nume);
-	Activitate::Adresa::Adresa(activitate.Get_Adresa());
-	Activitate::Data::Data(activitate.Get_Data());
+	strcpy(Adresa::value, activitate.Get_Adresa());
+	strcpy(Data::value, activitate.Get_Data());
 }
 
 Activitate::~Activitate()
 {
 	delete nume;
+	Activitate::Adresa::value = NULL;
+	Activitate::Data::value = NULL;
 }
