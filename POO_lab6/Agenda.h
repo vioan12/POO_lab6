@@ -21,15 +21,17 @@ private:
 	};
 
 public:
-	Activitate(const char[], const char[], const char[]);
+	Activitate(const char nume[], const char adresa[], const char data[]);
 	Activitate(Activitate &);
 	~Activitate();
 	char* Get_Adresa();
 	char* Get_Data();
+	char* Get_nume();
 };
 
 class AgendaElectronica
 {
+private:
 	class Nod
 	{
 	private:
@@ -39,8 +41,14 @@ class AgendaElectronica
 		Nod(Activitate, Nod*, Nod*);
 		Nod(Nod &);
 		~Nod();
+		void Set_left(Nod*);
+		void Set_right(Nod*);
 		Nod* Get_left();
 		Nod* Get_right();
 		Activitate* Get_val();
 	};
+	Nod *head;
+	Nod* Add(Activitate, Nod*);
+public:
+	void Add(Activitate);
 };

@@ -17,16 +17,6 @@ Activitate::Activitate(const char valueofnume[], const char valueofadresa[], con
 	strcpy(Data::value, valueofdata);
 }
 
-char* Activitate::Get_Adresa()
-{
-	return Activitate::Adresa::value;
-}
-
-char* Activitate::Get_Data()
-{
-	return Activitate::Data::value;
-}
-
 Activitate::Activitate(Activitate &activitate)
 {
 	nume = new char[strlen(activitate.nume) + 1];
@@ -43,4 +33,19 @@ Activitate::~Activitate()
 	delete nume;
 	Activitate::Adresa::value = NULL;
 	Activitate::Data::value = NULL;
+}
+
+char* Activitate::Get_Adresa()
+{
+	return Activitate::Adresa::value;
+}
+
+char* Activitate::Get_Data()
+{
+	return Activitate::Data::value;
+}
+
+char* Activitate::Get_nume()
+{
+	return Activitate::nume;
 }

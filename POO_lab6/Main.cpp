@@ -4,9 +4,16 @@
 
 int main()
 {
-	Activitate *A;
-	A = new Activitate("Mers facultate", "ACE-Craiova", "18-01-2018");
-	Activitate A2(*A);
-	delete A;
+	AgendaElectronica *AE;
+	AE = new AgendaElectronica();
+	Activitate *ac;
+	ac = new Activitate("Mancat", "ACE", "12-02-2018");
+	AE->Add(*ac);
+	ac = new Activitate("Curs POO", "ACE", "19-01-2018");
+	AE->Add(*ac);
+	ac = new Activitate("Laborator SCD", "ACE", "19-01-2018");
+	AE->Add(*ac);
+	ac = new Activitate("Mancat", "Cantina", "17-01-2018");
+	AE->Add(*ac);
 	return 0;
 }
