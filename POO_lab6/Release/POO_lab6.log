@@ -14,10 +14,13 @@ Activitate.cpp(28): warning C4996: 'strcpy': This function or variable may be un
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
   AgendaElectronica.cpp
 AgendaElectronica.cpp(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  DataCompare.cpp
+DataCompare.cpp(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+DataCompare.cpp(10): warning C4101: 'c_t': unreferenced local variable
   Main.cpp
 Main.cpp(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   Generating code
-  All 15 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 11 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   POO_lab6.vcxproj -> C:\Users\Ioan\documents\visual studio 2015\Projects\POO_lab6\Release\POO_lab6.exe
   POO_lab6.vcxproj -> C:\Users\Ioan\documents\visual studio 2015\Projects\POO_lab6\Release\POO_lab6.pdb (Full PDB)

@@ -24,6 +24,9 @@
     <ClCompile Include="AgendaElectronica.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DataCompare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Agenda.h">

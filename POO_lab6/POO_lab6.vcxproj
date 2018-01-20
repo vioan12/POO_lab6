@@ -144,6 +144,7 @@
   <ItemGroup>
     <ClCompile Include="Activitate.cpp" />
     <ClCompile Include="AgendaElectronica.cpp" />
+    <ClCompile Include="DataCompare.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>

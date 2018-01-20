@@ -1,7 +1,14 @@
 ﻿  Main.cpp
 c:\users\ioan\documents\visual studio 2015\projects\poo_lab6\poo_lab6\main.cpp(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  DataCompare.cpp
+c:\users\ioan\documents\visual studio 2015\projects\poo_lab6\poo_lab6\datacompare.cpp(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\ioan\documents\visual studio 2015\projects\poo_lab6\poo_lab6\datacompare.cpp(10): warning C4101: 'c_t': unreferenced local variable
   AgendaElectronica.cpp
 c:\users\ioan\documents\visual studio 2015\projects\poo_lab6\poo_lab6\agendaelectronica.cpp(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\ioan\documents\visual studio 2015\projects\poo_lab6\poo_lab6\agendaelectronica.cpp(61): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+c:\users\ioan\documents\visual studio 2015\projects\poo_lab6\poo_lab6\agendaelectronica.cpp(62): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
   Activitate.cpp
 c:\users\ioan\documents\visual studio 2015\projects\poo_lab6\poo_lab6\activitate.cpp(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 c:\users\ioan\documents\visual studio 2015\projects\poo_lab6\poo_lab6\activitate.cpp(15): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.

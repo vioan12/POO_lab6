@@ -17,6 +17,7 @@ private:
 	{
 		friend class Activitate;
 	private:
+		//Formatul Datei este ZZ-LL-AAAA
 		static char *value;
 	};
 
@@ -52,3 +53,10 @@ private:
 public:
 	void Add(Activitate);
 };
+
+class DataCompare
+{
+public:
+	static int compare(char[], char[]);
+};
+
