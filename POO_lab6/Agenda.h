@@ -11,16 +11,25 @@ private:
 	{
 		friend class Activitate;
 	private:
-		static char *value;
+		char *value;
+	public:
+		Adresa(const char []);
+		Adresa(Adresa &);
+		~Adresa();
 	};
 	class Data
 	{
 		friend class Activitate;
 	private:
 		//Formatul Datei este ZZ-LL-AAAA
-		static char *value;
+		char *value;
+	public:
+		Data(const char[]);
+		Data(Data &);
+		~Data();
 	};
-
+	Adresa *adresa;
+	Data *data;
 public:
 	Activitate(const char nume[], const char adresa[], const char data[]);
 	Activitate(Activitate &);
@@ -39,7 +48,7 @@ private:
 		Activitate *val;
 		Nod *left, *right;
 	public:
-		Nod(Activitate, Nod*, Nod*);
+		Nod(Activitate&, Nod*, Nod*);
 		Nod(Nod &);
 		~Nod();
 		void Set_left(Nod*);

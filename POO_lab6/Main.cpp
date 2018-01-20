@@ -16,5 +16,7 @@ int main()
 	AE->Add(*ac);
 	ac = new Activitate("Mancat", "Cantina", "17-01-2017");
 	AE->Add(*ac);
+	ac = new Activitate("Examen", "C11", "12-02-2019");
+	AE->Add(*ac);
 	return 0;
 }

@@ -3,7 +3,7 @@
 #include"Agenda.h";
 #include<string.h>
 
-AgendaElectronica::Nod::Nod(Activitate val, Nod *left, Nod *right)
+AgendaElectronica::Nod::Nod(Activitate &val, Nod *left, Nod *right)
 {
 	this->val = new Activitate(val);
 	this->left = left;
@@ -57,10 +57,7 @@ AgendaElectronica::Nod* AgendaElectronica::Add(Activitate activitate, Nod *adr)
 	}
 	else
 	{
-		char c_temp1[30], c_temp2[30];
-		strcpy(c_temp1 ,activitate.Get_Data());
-		strcpy(c_temp2, adr->Get_val()->Get_Data());
-		if (DataCompare::compare(c_temp1, c_temp2) < 0)
+		if (DataCompare::compare(activitate.Get_Data(), adr->Get_val()->Get_Data()) < 0)
 		{
 			adr->Set_left(AgendaElectronica::Add(activitate, adr->Get_left()));
 		}
