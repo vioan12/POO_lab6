@@ -34,8 +34,8 @@ public:
 	Activitate(const char nume[], const char adresa[], const char data[]);
 	Activitate(Activitate &);
 	~Activitate();
-	char* Get_Adresa();
-	char* Get_Data();
+	char* Get_adresa();
+	char* Get_data();
 	char* Get_nume();
 };
 
@@ -59,8 +59,10 @@ private:
 	};
 	Nod *head;
 	Nod* Add(Activitate, Nod*);
+	void Preorder(Nod *);//RSD
 public:
 	void Add(Activitate);
+	void Preorder();
 };
 
 class DataCompare

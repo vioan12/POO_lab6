@@ -60,12 +60,12 @@ Activitate::~Activitate()
 	delete nume;
 }
 
-char* Activitate::Get_Adresa()
+char* Activitate::Get_adresa()
 {
 	return adresa->value;
 }
 
-char* Activitate::Get_Data()
+char* Activitate::Get_data()
 {
 	return data->value;
 }

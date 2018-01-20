@@ -18,5 +18,6 @@ int main()
 	AE->Add(*ac);
 	ac = new Activitate("Examen", "C11", "12-02-2019");
 	AE->Add(*ac);
+	AE->Preorder();
 	return 0;
 }

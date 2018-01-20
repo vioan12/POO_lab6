@@ -2,6 +2,7 @@
 
 #include"Agenda.h";
 #include<string.h>
+#include<iostream>
 
 AgendaElectronica::Nod::Nod(Activitate &val, Nod *left, Nod *right)
 {
@@ -57,7 +58,7 @@ AgendaElectronica::Nod* AgendaElectronica::Add(Activitate activitate, Nod *adr)
 	}
 	else
 	{
-		if (DataCompare::compare(activitate.Get_Data(), adr->Get_val()->Get_Data()) < 0)
+		if (DataCompare::compare(activitate.Get_data(), adr->Get_val()->Get_data()) < 0)
 		{
 			adr->Set_left(AgendaElectronica::Add(activitate, adr->Get_left()));
 		}
@@ -72,4 +73,23 @@ AgendaElectronica::Nod* AgendaElectronica::Add(Activitate activitate, Nod *adr)
 void AgendaElectronica::Add(Activitate valueofactivitate)
 {
 	head = Add(valueofactivitate, head);
+}
+
+
+void AgendaElectronica::Preorder(Nod *adr)//RSD
+{
+	//daca nu s-a ajuns la ultimul nod
+	if (adr != NULL)
+	{
+		//se viziteaza radacina
+		cout<<adr->Get_val()->Get_nume()<<": "<<adr->Get_val()->Get_adresa()<<" | "<<adr->Get_val()->Get_data()<<"\n";
+		//se viziteaza copilul din stanga apoi cel din dreapta
+		Preorder(adr->Get_left());
+		Preorder(adr->Get_right());
+	}
+}
+
+void AgendaElectronica::Preorder()
+{
+	Preorder(head);
 }
