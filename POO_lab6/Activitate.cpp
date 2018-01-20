@@ -6,7 +6,7 @@
 char* Activitate::Adresa::value = NULL;
 char* Activitate::Data::value = NULL;
 
-Activitate::Activitate(char valueofnume[], char valueofadresa[], char valueofdata[]) 
+Activitate::Activitate(const char valueofnume[], const char valueofadresa[], const char valueofdata[])
 {
 	nume = new char[strlen(valueofnume) + 1];
 	Adresa::value = new char[strlen(valueofadresa) + 1];

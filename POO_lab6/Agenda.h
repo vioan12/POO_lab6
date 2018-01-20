@@ -21,9 +21,26 @@ private:
 	};
 
 public:
-	Activitate(char[], char[], char[]);
+	Activitate(const char[], const char[], const char[]);
 	Activitate(Activitate &);
 	~Activitate();
 	char* Get_Adresa();
 	char* Get_Data();
+};
+
+class AgendaElectronica
+{
+	class Nod
+	{
+	private:
+		Activitate *val;
+		Nod *left, *right;
+	public:
+		Nod(Activitate, Nod*, Nod*);
+		Nod(Nod &);
+		~Nod();
+		Nod* Get_left();
+		Nod* Get_right();
+		Activitate* Get_val();
+	};
 };
